@@ -2,9 +2,11 @@
 寝印有什么用？
 
 可以让非WIFI打印机在局域网中进行共享，实现跨平台无线打印
+
 寝印的安装条件？
 
 一台路由器+一台电脑
+
 寝印安装步骤
 
 1.LAMP环境搭建 2.寝印安装+配置
@@ -12,12 +14,19 @@
 LAMP环境搭建(关键)
 
 Windows平台 
+
 1.安装虚拟机 
+
 2.在虚拟机中安装Linux系统，以Ubuntu系统为例 
+
 3.在Linux系统中安装Apache2、PHP、MySQL 
+
 sudo apt-get install apache2 php5 mysql-server php5-mysql 
+
 Linux平台 
+
 1.在Linux系统中安装Apache2、PHP、MySQL 
+
 sudo apt-get install apache2 php5 mysql-server php5-mysql 
 
 寝印安装+配置(关键)
