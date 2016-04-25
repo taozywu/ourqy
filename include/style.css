@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body {
+    background: #B356A1;
+}
+
+#main_index {
+    position: relative;
+    height: 850px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#left {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background: #B356A1;
+}
+
+#version{
+    margin: 0px auto;
+    text-align: center;
+    color:white;
+    font-size: 10px;
+    vertical-align: middle;
+    line-height: 8px;
+    height: 10px;
+}
+
+#footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #B356A1;
+    color: white;
+}
+
+#nav {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#nav li {
+    float: left;
+    width: 15%;
+    height: 25px;
+    margin: 0 4%;
+    list-style: none;
+    text-align: center;
+    transition: 1s background-color;
+}
+
+#nav li:hover {
+    background-color: #B356A1;
+}
+
+#nav li a {
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#nav a:active {
+    background-color: black;
+    color: white;
+    opacity: 0.1;
+}
+
+
+/*打印表格*/
+
+#table {
+    width: 60%;
+    border-radius: 10px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#table td {
+    color: white;
+    text-align: center;
+}
+
+.table_input {
+    width: 90%;
+}
+
+
+/*列表框*/
+
+#queque_list, #model_list, #processed_list, #upload_list {
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+}
+
+#model_list, #queque_list, #upload_list, #processed_list {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#model_list:hover, #queque_list:hover, #upload_list:hover, #processed_list:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s background-color;
+}
+
+
+/*填充的行高*/
+
+.high_div {
+    line-height: 25px;
+}
+
+
+/**/
+
+#warn_title {
+    height: 40px;
+    line-height: 20px;
+    color: white;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+
+/**/
+
+.model, .queque, .processed {
+    color: white;
+    width: 90%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    line-height: 40px;
+    transition: 0.5s height;
+    vertical-align: middle;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.model:hover, .queque:hover, .processed:hover {
+    opacity: 0.6;
+    width: 91%;
+    height: 65px;
+}
+
+.model:hover p, .queque:hover p, .processed:hover p {
+    display: block;
+}
+
+.model p, .queque p, .processed p {
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    filter: alpha(Opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    display: none;
+}
+
+.model img, .queque img, .processed img {
+	line-height: 20px;
+	vertical-align: middle;
+	display: block;
+    height: 20px;
+    width: 20px;
+    float: right;
+    border: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.img_delete {
+    background: url("../img/pts.png") -40px -0px no-repeat;
+}
+
+.img_print {
+    background: url("../img/pts.png") -0px -0px no-repeat;
+}
+
+.img_model {
+    background: url("../img/pts.png") -20px 0px no-repeat;
+}
+
+.img_delete:hover {
+    background: url("../img/pts.png") -40px -20px no-repeat;
+}
+
+.img_print:hover {
+    background: url("../img/pts.png") 0px -20px no-repeat;
+}
+
+.img_model:hover {
+    background: url("../img/pts.png") -20px -20px no-repeat;
+}
+
+
+/*pdf预览*/
+
+#main_2 {
+    position: absolute;
+    height: 849px;
+    width: 100%;
+    display: none;
+}
+
+#viewtitle {
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: white;
+}
+
+#viewtitle:hover {
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+}
+
+#pdfview {
+    height: 100%;
+}
